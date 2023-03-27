@@ -46,5 +46,5 @@ Khác loại gồm  MongoDB, Cassandra, Redis, Couchbase là các cơ sở dữ 
 - Tính năng bảo mật: MySQL 8.0 cải thiện tính năng bảo mật với việc bảo vệ dữ liệu với mã hóa AES-256 và tự động bảo vệ chống lại các cuộc tấn công DDoS.
 
 - JSON: MySQL 8.0 cải tiến tính năng sao chép và hỗ trợ tốt hơn cho JSON.
-- 
+
 #### 5. File config trong mysql
