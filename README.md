@@ -2,6 +2,7 @@
 
 #### Giới thiệu
 MySQL là một hệ quản trị cơ sở dữ liệu quan hệ mã nguồn mở (open source relational database management system - RDBMS) phổ biến nhất trên thế giới. MySQL có thể hoạt động trên nhiều hệ điều hành khác nhau, bao gồm Windows, Linux và Mac OS X. Nó cũng có thể được tích hợp với các ngôn ngữ lập trình như PHP, Java, Python, Perl và các ngôn ngữ khác để phát triển ứng dụng web và phần mềm.
+
 #### 1. Khái niệm:
 Mysql là hệ thống quản trị dữ liệu phổ biến dùng để quản lý dữ liệu và được sử dụng nhiều trong các ứng dụng web như php và các hệ thống máy chủ.
 #### 1.1. Ưu và nhược điểm:
@@ -10,8 +11,10 @@ Mysql là hệ thống quản trị dữ liệu phổ biến dùng để quản 
 #### 1.2. Version mới nhất và phổ biến nhất
 Mysql 8.0.32 là phiên bản mới nhất hiện tại.
 Mysql 5.7 là phiên bản phổ biến.
+
 #### 2. Những thằng được tách ra từ mysql
 Mysql được tách ra được nhiều csdl như mariadb, percona server, amazon aurora, google cloud sql và oracle mysql cloud service.
+
 #### 3. Mysql thuộc loại cơ sở dữ liệu gì, có những thằng nào cùng loại, khác loại và ưu thế so với các thằng cùng loại
 #### 3.1. Mysql thuộc loại cơ sở dữ liệu gì
 MySQL là một hệ quản trị cơ sở dữ liệu quan hệ.
@@ -20,6 +23,7 @@ Cùng loại gồm oracle, Microsoft SQL Server, PostgreSQL, SQLite, IBM DB2 và
 Khác loại gồm  MongoDB, Cassandra, Redis, Couchbase là các cơ sở dữ liệu lưu trữ dữ liệu dưới dạng tài liệu hoặc bản ghi.
 #### 3.3. Ưu thế so với các thằng cùng loại
 Ưu thế của mysql so với các dữ liệu khác là nó miễn phí nên giảm chi phí đầu tư và phát triển dự án, có hiệu suất cao, có thể mở rộngđể xử lý dữ liệu, có thể chạy trên nhiều nền tảng khác như windows, linux và macOS, và có công cụ và thư viện hỗ trợ người dùng, dễ sử dụng, có độ bảo mật cao, hỗ trợ đầy đủ chuẩn sql, hỗ trợ khóa ngoại và cho phép tùy chỉnh cấu hình để phù hợp với nhu cầu của dự án.
+
 #### 4. So sánh phiên bản 5.7 và 8.0
 - Hiệu suất: MySQL 8.0 được cải tiến về hiệu suất so với MySQL 5.7. Nó có khả năng xử lý các truy vấn nhanh hơn và hỗ trợ các tính năng mới như truy vấn đệ quy và cập nhật tập trung.
 
@@ -42,4 +46,5 @@ Khác loại gồm  MongoDB, Cassandra, Redis, Couchbase là các cơ sở dữ 
 - Tính năng bảo mật: MySQL 8.0 cải thiện tính năng bảo mật với việc bảo vệ dữ liệu với mã hóa AES-256 và tự động bảo vệ chống lại các cuộc tấn công DDoS.
 
 - JSON: MySQL 8.0 cải tiến tính năng sao chép và hỗ trợ tốt hơn cho JSON.
+- 
 #### 5. File config trong mysql
