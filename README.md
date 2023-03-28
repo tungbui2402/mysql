@@ -48,3 +48,24 @@ Khác loại gồm  MongoDB, Cassandra, Redis, Couchbase là các cơ sở dữ 
 - JSON: MySQL 8.0 cải tiến tính năng sao chép và hỗ trợ tốt hơn cho JSON.
 
 #### 5. File config trong mysql
+
+#### 5.1. Tùy chọn cấu hình cho bộ nhớ đệm:
+- key_buffer_size: Kích thước bộ nhớ đệm cho các bảng lưu trữ theo kiểu MyISAM.
+- innodb_buffer_pool_size: Kích thước bộ nhớ đệm cho các bảng lưu trữ theo kiểu InnoDB.
+- query_cache_size: Kích thước bộ nhớ đệm cho lưu trữ các kết quả truy vấn.
+#### 5.2. Tùy chọn cấu hình cho kết nối:
+- max_connections: Số lượng kết nối tối đa được phép đồng thời.
+- wait_timeout: Thời gian chờ tối đa trước khi một kết nối bị đóng.
+- interactive_timeout: Thời gian chờ tối đa trước khi một kết nối tương tác bị đóng.
+#### 5.3. Tùy chọn cấu hình cho bảo mật:
+- skip-networking: Tắt chức năng mạng để MySQL chỉ chạy trên máy chủ local.
+- secure-file-priv: Định nghĩa thư mục cho các tệp tin được truy cập bởi lệnh LOAD DATA INFILE hoặc SELECT ... INTO OUTFILE.
+- ssl-cert, ssl-key: Các tệp chứa chứng chỉ SSL để sử dụng cho kết nối SSL.
+#### 5.4. Tùy chọn cấu hình cho ghi log:
+- log_error: Định nghĩa vị trí cho tệp lưu trữ các thông báo lỗi.
+- slow_query_log: Sử dụng log chậm để ghi lại các truy vấn chậm.
+- log_bin: Sử dụng log nhị phân để ghi lại các hoạt động của MySQL.
+#### 5.5. Tùy chọn cấu hình khác:
+- default-storage-engine: Định nghĩa kiểu lưu trữ mặc định cho các bảng mới.
+- default-time-zone: Đặt múi giờ mặc định cho MySQL.
+- tmpdir: Định nghĩa thư mục tạm cho MySQL.
