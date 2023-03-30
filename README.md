@@ -71,11 +71,11 @@ Hệ thống sẽ có 2 (hoặc nhiều hơn) database giống hệt nhau, mỗi
 Mô hình Master-Slave trong MySQL có nhiều ứng dụng trong việc tăng tính sẵn sàng và độ tin cậy của hệ thống. Ví dụ, nếu có sự cố xảy ra trên Master, các máy chủ Slave vẫn có thể sử dụng dữ liệu được sao chép từ Master để tiếp tục hoạt động. Ngoài ra, mô hình Master-Slave trong MySQL cũng có thể được sử dụng để phân tải tải cho các máy chủ Slave, giúp tăng hiệu suất cho hệ thống.
 
 #### 6.2. Ưu và nhược điểm của mô hình master-slave trong mysql
-Ưu điểm của mô hình Master-Slave trong MySQL:
+#### Ưu điểm của mô hình Master-Slave trong MySQL:
 - Tăng tính sẵn sàng và độ tin cậy của hệ thống: Khi có sự cố xảy ra trên Master, các máy chủ Slave vẫn có thể sử dụng dữ liệu được sao chép từ Master để tiếp tục hoạt động.
 - Phân tải tải cho các máy chủ Slave: Mô hình Master-Slave trong MySQL có thể được sử dụng để phân tải tải cho các máy chủ Slave, giúp tăng hiệu suất cho hệ thống.
 - Sao lưu và phục hồi dữ liệu dễ dàng: Khi Master bị lỗi, bạn có thể sử dụng một Slave khác làm Master để tiếp tục vận hành hệ thống.
-Nhược điểm của mô hình Master-Slave trong MySQL:
+#### Nhược điểm của mô hình Master-Slave trong MySQL:
 - Không hỗ trợ đọc/ghi đồng thời: Khi có nhiều Slave, các Slave chỉ có thể đọc dữ liệu từ Master, không thể ghi dữ liệu vào Master.
 - Tốn kém chi phí: Mô hình Master-Slave trong MySQL yêu cầu có nhiều hơn một máy chủ để triển khai, do đó, nó tốn kém chi phí hơn so với một máy chủ đơn.
 - Độ trễ tương đối cao: Do dữ liệu phải được sao chép từ Master đến Slave, do đó, có thể có độ trễ tương đối cao giữa các Slave và Master, ảnh hưởng đến hiệu suất của hệ thống.
