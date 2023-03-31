@@ -1,9 +1,9 @@
 # Mysql
 
-#### Giới thiệu
+### Giới thiệu
 MySQL là một hệ quản trị cơ sở dữ liệu quan hệ mã nguồn mở (open source relational database management system - RDBMS) phổ biến nhất trên thế giới. MySQL có thể hoạt động trên nhiều hệ điều hành khác nhau, bao gồm Windows, Linux và Mac OS X. Nó cũng có thể được tích hợp với các ngôn ngữ lập trình như PHP, Java, Python, Perl và các ngôn ngữ khác để phát triển ứng dụng web và phần mềm.
 
-#### 1. Khái niệm:
+### 1. Khái niệm:
 Mysql là hệ thống quản trị dữ liệu phổ biến dùng để quản lý dữ liệu và được sử dụng nhiều trong các ứng dụng web như php và các hệ thống máy chủ.
 #### 1.1. Ưu và nhược điểm:
 - Ưu thì mysql dễ sử dụng, đa tính năng, khả năng mở rộng và tốc độ thực thi nhanh.
@@ -12,10 +12,10 @@ Mysql là hệ thống quản trị dữ liệu phổ biến dùng để quản 
 Mysql 8.0.32 là phiên bản mới nhất hiện tại.
 Mysql 5.7 là phiên bản phổ biến.
 
-#### 2. Những thằng được tách ra từ mysql
+### 2. Những thằng được tách ra từ mysql
 Mysql được tách ra được nhiều csdl như mariadb, percona server, amazon aurora, google cloud sql và oracle mysql cloud service.
 
-#### 3. Mysql thuộc loại cơ sở dữ liệu gì, có những thằng nào cùng loại, khác loại và ưu thế so với các thằng cùng loại
+### 3. Mysql thuộc loại cơ sở dữ liệu gì, có những thằng nào cùng loại, khác loại và ưu thế so với các thằng cùng loại
 #### 3.1. Mysql thuộc loại cơ sở dữ liệu gì
 MySQL là một hệ quản trị cơ sở dữ liệu quan hệ.
 #### 3.2. Những thằng cùng loại và khác loại với mysql
@@ -24,7 +24,7 @@ Khác loại gồm  MongoDB, Cassandra, Redis, Couchbase là các cơ sở dữ 
 #### 3.3. Ưu thế so với các thằng cùng loại
 Ưu thế của mysql so với các dữ liệu khác là nó miễn phí nên giảm chi phí đầu tư và phát triển dự án, có hiệu suất cao, có thể mở rộngđể xử lý dữ liệu, có thể chạy trên nhiều nền tảng khác như windows, linux và macOS, và có công cụ và thư viện hỗ trợ người dùng, dễ sử dụng, có độ bảo mật cao, hỗ trợ đầy đủ chuẩn sql, hỗ trợ khóa ngoại và cho phép tùy chỉnh cấu hình để phù hợp với nhu cầu của dự án.
 
-#### 4. So sánh phiên bản 5.7 và 8.0
+### 4. So sánh phiên bản 5.7 và 8.0
 - Hiệu suất: MySQL 8.0 được cải tiến về hiệu suất so với MySQL 5.7. Nó có khả năng xử lý các truy vấn nhanh hơn và hỗ trợ các tính năng mới như truy vấn đệ quy và cập nhật tập trung.
 - Bảo mật: MySQL 8.0 cung cấp các tính năng bảo mật mới như bảo vệ dữ liệu với mã hóa AES-256 và tự động bảo vệ chống lại các cuộc tấn công DDoS.
 - Replication: MySQL 8.0 cải thiện tính năng sao chép với tính năng mới như Group Replication, một tính năng đồng bộ hóa cụm máy chủ mới cho phép sao chép đồng bộ giữa các nút cụm.
@@ -38,7 +38,7 @@ Khác loại gồm  MongoDB, Cassandra, Redis, Couchbase là các cơ sở dữ 
 - Tính năng bảo mật: MySQL 8.0 cải thiện tính năng bảo mật với việc bảo vệ dữ liệu với mã hóa AES-256 và tự động bảo vệ chống lại các cuộc tấn công DDoS.
 - JSON: MySQL 8.0 cải tiến tính năng sao chép và hỗ trợ tốt hơn cho JSON.
 
-#### 5. File config trong mysql
+### 5. File config trong mysql
 - Host: Địa chỉ IP hoặc tên miền của server.
 - Port: Cổng mà server lắng nghe kết nối.
 - Username: Tên đăng nhập để truy cập vào hệ thống.
@@ -56,7 +56,7 @@ Khác loại gồm  MongoDB, Cassandra, Redis, Couchbase là các cơ sở dữ 
 #### 5.1. Cấu hình để cho phép connect đến mysql từ 1 server khác.
 Để cho phép kết nối với MySQL từ một máy chủ khác, bạn cần đặt tham số cấu hình `bind-address` thành địa chỉ IP của máy chủ MySQL hoặc thành `0.0.0.0` trong tệp cấu hình MySQL và đảm bảo rằng tường lửa trên máy chủ được định cấu hình để cho phép kết nối với cổng 3306 (hoặc một cổng khác nếu bạn đã thay đổi cấu hình).
 
-#### 6. Mô hình Master-Slave
+### 6. Mô hình Master-Slave
 Mô hình master-slave là một kiểu cấu trúc hệ thống gồm hai hoặc nhiều server trong đó một server được chỉ định làm master và các server khác được chỉ định làm slave. Trong mô hình này, dữ liệu được đồng bộ hóa giữa master và slave bằng cách sao chép dữ liệu từ master đến các slave.
 Mô hình master-slave thường được sử dụng trong các hệ thống cần đảm bảo tính sẵn sàng và độ tin cậy cao, ví dụ như các hệ thống cơ sở dữ liệu hoặc các hệ thống web quy mô lớn.
 Các đặc điểm của mô hình master-slave bao gồm:
@@ -71,11 +71,11 @@ Hệ thống sẽ có 2 (hoặc nhiều hơn) database giống hệt nhau, mỗi
 Mô hình Master-Slave trong MySQL có nhiều ứng dụng trong việc tăng tính sẵn sàng và độ tin cậy của hệ thống. Ví dụ, nếu có sự cố xảy ra trên Master, các máy chủ Slave vẫn có thể sử dụng dữ liệu được sao chép từ Master để tiếp tục hoạt động. Ngoài ra, mô hình Master-Slave trong MySQL cũng có thể được sử dụng để phân tải tải cho các máy chủ Slave, giúp tăng hiệu suất cho hệ thống.
 
 #### 6.2. Ưu và nhược điểm của mô hình master-slave trong mysql
-#### 6.2.1. Ưu điểm của mô hình Master-Slave trong MySQL:
+##### 6.2.1. Ưu điểm của mô hình Master-Slave trong MySQL:
 - Tăng tính sẵn sàng và độ tin cậy của hệ thống: Khi có sự cố xảy ra trên Master, các máy chủ Slave vẫn có thể sử dụng dữ liệu được sao chép từ Master để tiếp tục hoạt động.
 - Phân tải cho các máy chủ Slave: Mô hình Master-Slave trong MySQL có thể được sử dụng để phân tải tải cho các máy chủ Slave, giúp tăng hiệu suất cho hệ thống.
 - Sao lưu và phục hồi dữ liệu dễ dàng: Khi Master bị lỗi, bạn có thể sử dụng một Slave khác làm Master để tiếp tục vận hành hệ thống.
-#### 6.2.2. Nhược điểm của mô hình Master-Slave trong MySQL:
+##### 6.2.2. Nhược điểm của mô hình Master-Slave trong MySQL:
 - Không hỗ trợ đọc/ghi đồng thời: Khi có nhiều Slave, các Slave chỉ có thể đọc dữ liệu từ Master, không thể ghi dữ liệu vào Master.
 - Tốn kém chi phí: Mô hình Master-Slave trong MySQL yêu cầu có nhiều hơn một máy chủ để triển khai, do đó, nó tốn kém chi phí hơn so với một máy chủ đơn.
 - Độ trễ tương đối cao: Do dữ liệu phải được sao chép từ Master đến Slave, do đó, có thể có độ trễ tương đối cao giữa các Slave và Master, ảnh hưởng đến hiệu suất của hệ thống.
